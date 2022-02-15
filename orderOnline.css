@@ -1,0 +1,36 @@
+
+h1{
+    text-align: left;
+}
+   
+ 
+  h1{text-align:center;}
+  .button{
+
+    border: none;
+    color: white;
+    
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    }
+    .form{
+      margin-left:30px;
+      margin-right:30px;
+    }
+
+    .frame{
+      height:500px;
+      text-align:center;
+       width:1000px;
+       margin-left:200px;
+       margin-right:200px;
+    }
+    
+#CustomerDetails{
+  margin-left:40px;
+  
+}
+

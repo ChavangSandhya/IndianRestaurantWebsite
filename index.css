@@ -1,0 +1,117 @@
+#div1{
+    margin-left:70px;
+    font-size:15px;
+
+}
+ 
+#div1>img{
+     margin-right:0px;
+    margin-top:1px;
+}
+.logo{
+    margin-left:1200px;
+    margin-right:10px;
+    margin-top:-40px;
+    
+}
+#div1 > a {
+ margin-left:0px; 
+ padding:5px,5px,5px,5px;
+ margin-top: 1px;
+ margin-right:10px; 
+   color:blue;
+}
+
+ #div3>.topnav >a:hover{
+     
+    color:crimson;
+}
+Html,body { 
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:20;
+    font-weight: 100px;
+    background-color:lavender;
+   
+  }
+ 
+ #div1>#facebookImg{
+     margin-left:500px;
+     margin-right:5px;
+      
+ }
+#div2{
+    margin-top: 10px;
+    border:1px thin gray;
+}
+ #div3>#picLogo{
+    height:100px;
+    width:170px;
+     margin-top:-15px;
+    margin-left:150px;
+    margin-right:20px;
+    margin-bottom:10px;
+
+}
+
+#div3>.topnav{
+    margin-left:450px;
+    margin-top:10px;
+   
+}
+ #div3>.topnav > a {
+    text-decoration: none;
+    margin-left:30px;
+     color:blue;
+    margin-right:30px;
+    
+     
+}
+
+.container{
+  position:relative;
+  
+}
+ 
+.secondText{
+  font-size:60px;
+  
+  color:blueviolet;
+  text-align:center;
+  top:30%;
+left:50%;
+
+  transform: translate(-50%, -50%);
+  position :absolute;
+   
+}
+.firstText {
+  font-size:30px;
+  color:black;
+  text-align:center;
+  top:15%;
+left:50%;
+transform:translate(-50%, -50%);
+  position:absolute;
+}
+
+.button{
+
+border: none;
+color: white;
+
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+}
+#orderBtn{
+  background-color:lightpink ;
+  padding: 20px;
+  position:absolute;
+  top:50%;
+  border-radius:24px;
+  left:50%;
+  transform:translate(-50%, -50%);
+  text-align: center;
+}

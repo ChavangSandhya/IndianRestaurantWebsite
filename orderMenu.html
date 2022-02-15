@@ -1,0 +1,485 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order form</title>
+    <link rel="StyleSheet" href="OrderMenu.css"/>
+
+    <script>
+    function Calculate(){
+      var total=0;
+        var v1=document.getElementById("sel1").value;
+        var v2=document.getElementById("sel2").value;
+        var v3=document.getElementById("sel3").value;
+        var v4=document.getElementById("sel4").value;
+        var v5=document.getElementById("sel5").value;
+        var v6=document.getElementById("sel6").value;
+        var v7=document.getElementById("sel7").value;
+        var v8=document.getElementById("sel8").value;
+        var sel12=document.getElementById("sel12").value;
+        var sel13=document.getElementById("sel13").value;
+        var sel14=document.getElementById("sel14").value;
+       
+         if(v1!='None'){
+        var total=total+(v1 * 11.99);
+         }
+         if(v2!='None'){
+        total=total+(v2 * 3.99);
+         }
+         if(v3!='None'){
+           total=total+(v3*7.99);
+         }
+         
+         if(v4!='None'){
+           total=total+(v4*9.99);
+         }
+         
+         if(v5!='None'){
+           total=total+(v5*11.99);
+         }
+         if(v6!='None'){
+        total=total+(v6 * 12.99);
+         }
+         if(v7!='None'){
+           total=total+(v7*11.99);
+         }
+         if(v8!='None'){
+           total=total+(v8*10.99);
+         }
+         
+        
+        var v9=document.getElementById("v9").selectedIndex;
+        var v10=document.getElementById("v10").selectedIndex;
+        if(sel13!='None' && v10==0 ){
+          
+          total=total+(4.99*sel13);
+
+        } 
+        if(sel13!='None' && v10==1 )
+            { total=total+(4.99*sel13);
+
+        } 
+        if(sel13!='None' && v10==2 )
+            { total=total+(7.99*sel13);
+
+        }
+        if(sel13!='None' && v10==3)
+         {total=total+(6.99*sel13);
+        }
+        if(sel13!='None' && v10==4)
+        {
+          total=total+(6.99*sel13);
+        }
+       
+        var v11=document.getElementById("v11").selectedIndex;
+        if(sel14!='None' && v11==0 ){
+          
+          total=total+(9.99*sel14);
+
+        } 
+        if(sel14!='None' && v11==1 )
+            { total=total+(7.99*sel14);
+
+        } 
+        if(sel14!='None' && v11==2 )
+            { total=total+(9.99*sel14);
+
+        }
+        if(sel14!='None' && v11==3)
+         {total=total+(11.99*sel14);
+        }
+        if(sel14!='None' && v11==4)
+        {
+          total=total+(12.99*sel14);
+        }
+        //document.write(v9);
+        if(sel12!='None' && v9==0 ){
+          
+          total=total+(2.99*sel12);
+
+        } 
+        if(sel12!='None' && v9==1 )
+            { total=total+(1.99*sel12);
+
+        } 
+        if(sel12!='None' && v9==2 )
+            { total=total+(1.25*sel12);
+
+        }
+        if(sel12!='None' && v9==3)
+         {total=total+(1.49*sel12);
+        }
+        if(sel12!='None' && v9==4)
+        {
+          total=total+(2.00*sel12);
+        }
+       // document.writeln("total:=",total);
+        document.getElementById("total").value="$"+ total;
+          
+            }
+            </script>
+            
+</head>
+<body>
+    
+     <div class="Leftmenus"> 
+       <h3>Breakfast MenuItems:</h3>
+       <br>
+           <div id="div5">
+               <img src="ravaDosa1.jpg"   alt="RavaDosa"/>
+                 </div>
+                 
+             
+        <div id="div6"> <label> <b>Rava Onion Masala Dosa  </b>
+         <b>$11.99 </b> <br>
+         <br>  Rava dosa filled with onions, potato, peas and onion curry. 
+        </label>
+         <br>
+         <br>
+       <label>Quantity :</label> <select id="sel1" type="text"><option>None</option>
+         <option>1</option>
+         <option>2</option>
+         <option>3</option>
+         <option>4</option>
+         <option>5</option>
+         <option>6</option>
+         <option>7</option>
+         <option>8</option>
+         <option>9</option>
+         <option>10</option>
+       </select>
+               </div>  </div>
+         <br>
+    
+        <div id="div7">
+            <img src="samosa.jpg"   alt="Samosa"/> 
+        </div>
+        <div id="div8"> <label> <b>Punjabi Samosa</b>
+         <b>$3.99 </b> <br>
+       <br> A pastry stuffed with spiced potatoes and green peas
+    </label>   
+    <br>
+    <br>
+    
+    <label>Quantity :</label> <select id="sel2"  type="text">
+      <option>None</option>
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+      <option>6</option>
+      <option>7</option>
+      <option>8</option>
+      <option>9</option>
+      <option>10</option>
+    </select>
+            
+         
+     
+    </div>
+     <br>
+      <br>
+     <div id="div9">
+        <img src="idli.jpg" alt="idli"/> 
+    </div>
+    <div id="div10"> <label> <b>Idli Sambar</b>
+    <b>$7.99 </b>  <br>
+    <br>    Steamed rice & lentil patties soaked in sambhar. 
+    </label> 
+    <br>
+    <br>
+    <label>Quantity :</label> <select  id="sel3" type="text">
+      <option>None</option>
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+      <option>6</option>
+      <option>7</option>
+      <option>8</option>
+      <option>9</option>
+      <option>10</option>
+    </select>
+            
+    </div>
+     <br>
+    
+     <br>
+    <div id="div11">
+       <img src="sambarVada.jpg" alt="idli"/> 
+    </div>
+    <div id="div12"> <label> <b>Sambar Vada</b>
+      <b>$9.99 </b>  <br>
+      <br>  Steamed rice & lentil patties soaked in sambhar. 
+    </label>
+    <br>
+    <br>
+    <label>Quantity :</label> <select id="sel4" type="text">
+      <option>None</option>
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+      <option>6</option>
+      <option>7</option>
+      <option>8</option>
+      <option>9</option>
+      <option>10</option>
+    </select>
+            
+    </div>
+     <br>
+     <br>
+     </div>
+     
+     <div class="Rightmenus"> 
+        <div id="div13">
+            <img src="dhokala.jpg" alt="Dhokala"/>
+         </div>
+     <div id="div14"> <label  > <b>Khaman Dhokala</b>
+     <b>$11.99 </b> <br>
+      <br> Delicious steamed savory chickpea flour cakes are a popular Gujarati delicacy.
+    </label> 
+    <br>
+    <br>
+    <label>Quantity :</label> <select id="sel5" type="text">
+      <option>None</option>
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+      <option>6</option>
+      <option>7</option>
+      <option>8</option>
+      <option>9</option>
+      <option>10</option>
+    </select>
+            
+    </div>
+    <br>
+      <br>
+      <div id="div15">
+        <img src="cholebhature.jpg" alt="CholeBhatura"/>
+     </div>
+    <div id="div16"> <label> <b>Chole  Bhature </b>
+     <b>$12.99 </b> <br>
+    <br> Chole Bhature is a spicy chickpea curry served with leavened fried bread.  
+    </label>
+    <br>
+    <br>
+    <label>Quantity :</label> <select id="sel6"  type="text">
+      
+      <option>None</option>
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+      <option>6</option>
+      <option>7</option>
+      <option>8</option>
+      <option>9</option>
+      <option>10</option>
+    </select>
+            
+    </div>
+    <br>
+    <br>
+    <div id="div17">
+        <img src="pavBhaji.jpg" alt="PavBhaji"/>
+     </div>
+    <div id="div18"> <label> <b>Pav Bhaji </b>
+     <b>$11.99 </b> <br>
+    <br>  Pav Bhaji is a hearty, delightsome, flavorful meal of mashed vegetable gravy with fluffy soft ...
+    
+    </label>
+    <br>
+    <br>
+    <label>Quantity :</label> <select  id="sel7" type="text">
+      <option>None</option>
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+      <option>6</option>
+      <option>7</option>
+      <option>8</option>
+      <option>9</option>
+      <option>10</option>
+    </select>
+            
+    </div>
+    <br>
+    <br>
+    <div id="div19">
+        <img src="rava_Uttapam.jpg" alt="Rava Uttapam"/>
+     </div>
+    <div id="div20"> <label> <b>Rava Uttapam </b>
+     <b>$10.99 </b> <br>
+    <br> Rava Uttapam is a delicious, easy to make, vegan, savory breakfast from India.
+    <br> They are topped with different ...
+    
+    </label>
+    <br>
+    <br>
+    <label>Quantity :</label> <select id="sel8" type="text">
+      <option>None</option>
+        <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+      <option>6</option>
+      <option>7</option>
+      <option>8</option>
+      <option>9</option>
+      <option>10</option>
+    </select>
+            
+    </div>
+    <br>
+    <br>
+ 
+     </div>
+     <br>
+<div class="menus"> 
+<div class="Drinks">
+  <h1>Drinks</h1>
+  <select id="v9">
+    <option> Mango Lassi &nbsp    $2.99</option>
+    <option> Thums Up &nbsp &nbsp $1.99</option>
+    <option> Water &nbsp &nbsp &nbsp &nbsp $1.25</option>
+    <option> Limka &nbsp &nbsp &nbsp &nbsp $1.49</option>
+    <option>Coke &nbsp &nbsp &nbsp &nbsp $2.00</option>
+     
+  </select>
+  <h1 id="q1">Quantity :</h1> <select id="sel12" type="text">
+    <option>None</option>
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+ </select>
+</div>
+ 
+<div class="kidsmenu">
+  <h1>Kids Menu</h1>
+  <select id="v10">
+    <option>  French Fries &nbsp;    $4.99</option>
+    <option>  Cone Dosa &nbsp; $4.99</option>
+    <option>  Cheese Sticks &nbsp; $7.99</option>
+    <option> Fish Finger Kids    &nbsp;  $6.99</option>
+    <option> Cheese Pizza &nbsp; $6.99  </option>
+     
+  </select>
+  <h1 id="q2">Quantity :</h1> <select id="sel13" type="text">
+    <option>None</option>
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+    </select>
+</div>
+<div class="Appetizers">
+  
+  <h1>Veg & Non-Veg Appetizers</h1>
+  <select id="v11" >
+    <option>Chili Paneer &nbsp; $9.99</option>
+    <option>Cut Mirchi &nbsp; $7.99</option>
+    <option>Chili Baby Corn &nbsp; $9.99</option>
+    <option>Chicken Manchurian &nbsp;$11.99</option>
+    <option>Tandoori Chicken &nbsp;$12.99  </option>
+  </select>
+    <h1 id="q3">Quantity :</h1>
+    <select id="sel14" type="text">
+      <option>None</option>
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+  </select>
+  
+</div>
+</div>
+<br>
+
+     <div class="CustomerDetails"> 
+      <label> Name: </label>
+        <br/>
+        <br/>
+        <input type="text" id="fname" >
+           <input id="txtlname" type="text" />
+    <br>
+    <br>
+
+    <label id="lblfname"> First Name  </label>
+    
+    <label id="lname"> Last Name </label>
+    <br/>
+   <br/>
+   <label>Email: </label>
+<br/>
+<br/>
+<input type="text" id="txtemail"/>
+<br/>
+<label id="lblEg">example@example.com</label>
+<br/>
+<br/>
+<label> Mobile/Phone: </label>
+<br/>
+<br/>
+<input id="txtmobile"  value="(000) 000 - 0000" type="text"/>
+<br/>
+<label> Please enter a valid phone number</label>
+<br/>
+
+ 
+<br/>
+<label> Do you want to pickup your order? </label>
+<br/>
+<br/>
+<input type="radio"  value="Yes"> Yes </input>
+ 
+<input type="radio" value="No"> No </input>
+<br/>
+     
+<br/>
+<label> Comments </label>
+<br><br>
+<textarea id="comments"  aria-multiline="true" maxlength="1000"> </textarea>
+ 
+ <br>
+ <br>
+ <br>
+ <label id="lblmethods"><b> Payment Methods</b></label>
+ 
+  <label id="lbltotal"><b>Total: </b></label>
+    <output id="total"></output> 
+ <br>
+<input type="radio"> Debit or Credit Card  </input>
+<br>
+ <br>
+<input type="radio"> Paypal</input>
+</div>
+<br>
+<br>
+<br>
+<div> 
+  <input type="button" value="Order Now" id="ordernow" onclick="Calculate();"/>
+  </div>  
+ 
+
+     
+    
+    
+</body>
+</html>
