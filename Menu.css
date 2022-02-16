@@ -1,7 +1,7 @@
 .Leftmenus>#div5,#div7,#div9,#div11 {
      margin-left:20px;
      margin-right:10px;
-   margin-bottom:10px;
+   margin-bottom:5px;
     margin-top:0px;
   
      
@@ -12,7 +12,7 @@
  {
     
       margin-top:-140px;
-    margin-bottom:10px;
+    margin-bottom:5px;
  margin-right:50%;
  margin-left:180px;
   
@@ -20,19 +20,20 @@
     
      
   .Rightmenus{
-     margin-top:-690px;
+     margin-top:-660px;
   }
  .Rightmenus>#div13,#div15,#div17,#div19{
    margin-right:30%;
    margin-left:650px;
- margin-bottom:10px;
+ margin-bottom:5px;
  margin-top:0px;
+      padding:5px;
     
  }
    
  .Rightmenus>#div14,#div16,#div18,#div20{
   margin-top:-150px;
- margin-bottom:10px;
+ margin-bottom:5px;
 margin-left:820px;
 margin-right:10px;
  
