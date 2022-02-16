@@ -1,7 +1,7 @@
 .Leftmenus>#div5,#div7,#div9,#div11 {
      margin-left:20px;
      margin-right:10px;
-   margin-bottom:05px;
+   margin-bottom:10px;
     margin-top:0px;
   
      
@@ -12,7 +12,7 @@
  {
     
       margin-top:-140px;
-    margin-bottom:05px;
+    margin-bottom:10px;
  margin-right:50%;
  margin-left:180px;
   
@@ -20,20 +20,20 @@
     
      
   .Rightmenus{
-     margin-top:-650px;
+     margin-top:-670px;
   }
  .Rightmenus>#div13,#div15,#div17,#div19{
-   margin-right:40%;
-   margin-left:670px;
- margin-bottom:0px;
+   margin-right:30%;
+   margin-left:650px;
+ margin-bottom:05px;
  margin-top:-4px;
     
  }
    
  .Rightmenus>#div14,#div16,#div18,#div20{
-  margin-top:-160px;
- margin-bottom:0px;
-margin-left:860px;
+  margin-top:-150px;
+ margin-bottom:05px;
+margin-left:820px;
 margin-right:10px;
  
 }
